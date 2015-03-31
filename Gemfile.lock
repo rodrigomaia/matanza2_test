@@ -1,7 +1,7 @@
 PATH
   remote: /Users/rodrigo/Workspaces/workfortes/matanza2
   specs:
-    matanza2 (0.0.31)
+    matanza2 (0.0.37)
       github_api
       rails (~> 4.2.1)
       ruby-trello (= 1.2.1)
