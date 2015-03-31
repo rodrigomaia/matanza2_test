@@ -1,7 +1,7 @@
 PATH
-  remote: /Users/rodrigo/Workspaces/workfortes/matanza2
+  remote: /Users/rodrigo/Workspaces/workfortes/t1k
   specs:
-    matanza2 (0.0.37)
+    t1k (0.0.1)
       github_api
       rails (~> 4.2.1)
       ruby-trello (= 1.2.1)
@@ -192,12 +192,12 @@ DEPENDENCIES
   coffee-rails (~> 4.1.0)
   jbuilder (~> 2.0)
   jquery-rails
-  matanza2!
   rails (= 4.2.1)
   sass-rails (~> 5.0)
   sdoc (~> 0.4.0)
   spring
   sqlite3
+  t1k!
   turbolinks
   uglifier (>= 1.3.0)
   web-console (~> 2.0)
