@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :escolas
   resources :professors
   resources :alunos
   # The priority is based upon order of creation: first created -> highest priority.
