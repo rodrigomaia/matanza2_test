@@ -14,7 +14,7 @@ gem 'coffee-rails', '~> 4.1.0'
 # See https://github.com/rails/execjs#readme for more supported runtimes
 # gem 'therubyracer', platforms: :ruby
 
-gem 'matanza2', path: "/Users/rodrigo/Workspaces/workfortes/matanza2"
+gem 't1k', path: "/Users/rodrigo/Workspaces/workfortes/t1k"
 
 # Use jquery as the JavaScript library
 gem 'jquery-rails'

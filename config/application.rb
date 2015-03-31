@@ -12,7 +12,7 @@ module Matanza2Test
     # Application configuration should go into files in config/initializers
     # -- all .rb files in that directory are automatically loaded.
 
-    Matanza2.configure do |config|
+    t1k.configure do |config|
       config[:github_user] = 'rodrigomaia'
       config[:github_repo] = 'matanza2_test'
       config[:github_oauth_token] = ENV["GITHUB_TOKEN"]
