@@ -15,9 +15,9 @@ module Matanza2Test
     Matanza2.configure do |config|
       config[:github_user] = 'rodrigomaia'
       config[:github_repo] = 'matanza2_test'
-      config[:github_oauth_token] = `echo $GITHUB_TOKEN`
-      config[:trello_developer_public_key] = `$TRELLO_KEY`
-      config[:trello_member_token] = `$TRELLO_TOKEN`
+      config[:github_oauth_token] = ENV["GITHUB_TOKEN"]
+      config[:trello_developer_public_key] = ENV["TRELLO_KEY"]
+      config[:trello_member_token] = ENV["TRELLO_TOKEN"]
       config[:trello_user_name] = 'rudrige'
       config[:trello_board_name] = 'MATANZA'
     end
