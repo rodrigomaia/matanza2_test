@@ -19,7 +19,7 @@ module Matanza2Test
       config[:trello_developer_public_key] = ENV["TRELLO_KEY"]
       config[:trello_member_token] = ENV["TRELLO_TOKEN"]
       config[:trello_user_name] = 'rudrige'
-      config[:trello_board_name] = 'MATANZA'
+      config[:trello_board_name] = 't1k'
     end
 
     # Set Time.zone default to the specified zone and make Active Record auto-convert to this zone.
