@@ -12,14 +12,31 @@ module Matanza2Test
     # Application configuration should go into files in config/initializers
     # -- all .rb files in that directory are automatically loaded.
 
-    T1k.configure do |config|
-      config[:github_user] = 'rodrigomaia'
-      config[:github_repo] = 'matanza2_test'
-      config[:github_oauth_token] = ENV["GITHUB_TOKEN"]
-      config[:trello_developer_public_key] = ENV["TRELLO_KEY"]
-      config[:trello_member_token] = ENV["TRELLO_TOKEN"]
-      config[:trello_user_name] = 'rudrige'
-      config[:trello_board_name] = 't1k'
+    T1k.setup do |config|
+      # Change the repository adapter. Default is github.
+      # config.repository.adapter = :github
+
+      # Change the tracker adapter. Default is trello.
+      # config.tracker.adapter = :trello
+
+      # Configuring your repository
+      config.repository.setup do |c|
+        # https://github.com/settings/applications
+        # Personal access tokens
+        c.oauth_token = ENV["GITHUB_TOKEN"]
+        c.user = 'rodrigomaia'
+        c.repo = 'matanza2_test'
+      end
+
+      # Configuring your tracker
+      config.tracker.setup do |c|
+        # https://trello.com/app-key
+        # https://trello.com/1/connect?key=YOUR_KEY&name=BOARD_NAME&expiration=never&response_type=token&scope=read,write
+        c.developer_public_key = ENV["TRELLO_KEY"]
+        c.member_token = ENV["TRELLO_TOKEN"]
+        c.user_name = 'rudrige'
+        c.board_name = 't1k'
+      end
     end
 
     # Set Time.zone default to the specified zone and make Active Record auto-convert to this zone.
