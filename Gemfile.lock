@@ -1,7 +1,7 @@
 PATH
   remote: /Users/rodrigo/Workspaces/workfortes/t1k
   specs:
-    t1k (1.1.6)
+    t1k (1.1.8)
       github_api (~> 0.12)
       rails (>= 4.0.2)
       ruby-trello (= 1.2.1)
