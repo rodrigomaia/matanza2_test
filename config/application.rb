@@ -17,7 +17,7 @@ module Matanza2Test
       # config.repository.adapter = :github
 
       # Change the tracker adapter. Default is trello.
-      # config.tracker.adapter = :trello
+      config.tracker.adapter = :anything
 
       # Configuring your repository
       config.repository.setup do |c|
@@ -29,14 +29,14 @@ module Matanza2Test
       end
 
       # Configuring your tracker
-      config.tracker.setup do |c|
-        # https://trello.com/app-key
-        # https://trello.com/1/connect?key=YOUR_KEY&name=BOARD_NAME&expiration=never&response_type=token&scope=read,write
-        c.developer_public_key = ENV["TRELLO_KEY"]
-        c.member_token = ENV["TRELLO_TOKEN"]
-        c.user_name = 'rudrige'
-        c.board_name = 't1k'
-      end
+      # config.tracker.setup do |c|
+      #   # https://trello.com/app-key
+      #   # https://trello.com/1/connect?key=YOUR_KEY&name=BOARD_NAME&expiration=never&response_type=token&scope=read,write
+      #   c.developer_public_key = ENV["TRELLO_KEY"]
+      #   c.member_token = ENV["TRELLO_TOKEN"]
+      #   c.user_name = 'rudrige'
+      #   c.board_name = 't1k'
+      # end
     end
 
     # Set Time.zone default to the specified zone and make Active Record auto-convert to this zone.
